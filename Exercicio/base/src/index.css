@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Signika';
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  gap: 15px;
+}
+
+.App h1 {
+  font-family: 'Signika';
+  font-size: 64px;
+  text-align: center;
+}
+
+.App input {
+  all: unset;
+  height: 30px;
+  width: 300px;
+  border: 1px solid #0f0f0f;
+  border-radius: 5px;
+  font-size: 16px;
+
+  margin-top: 10px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  width: 80vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #181818;
+  color: #fff;
+  border-radius: 5px;
+
+  padding: 10px;
+
+  height: 300px;
+  width: 300px;
+
+  gap: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card b {
+  font-size: 16px;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.card span {
+  font-size: 14px;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.loading, .error, .not-found {
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.loading {
+  background-color: rgb(166, 255, 181);
+  color: rgb(56, 122, 56);
+}
+
+.error {
+  background-color: rgb(255, 166, 166);
+  color: rgb(122, 56, 56);
+}
+
+.not-found {
+  background-color: rgb(255, 202, 166);
+  color: rgb(122, 71, 56);
+}
